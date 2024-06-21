@@ -347,26 +347,46 @@ flex-basis: 77%;
   flex-basis: 125%;
   position: relative;
   z-index: 2;
+  min-height: 100%;
 }
 .landing .container .image img {
 width: 100%;
 position: absolute;
-animation: up-down ;
-animation-name: up-down;
-animation-duration: 2s ;
+animation-name: up-down-2;
+animation-duration: 1s;
 animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: linear;
-top: -20%;
+/* top: -20%; */
+transform: translateY(-30%);
 }
-@keyframes up-down {
+@media (max-width: 1020px) {
+  .landing .container .image img {
+    animation-name: up-down-1;
+    /* top: 0; */
+    transform: translateY(-0%);
+    
+animation-duration: 2s ;
+    }
+}
+@keyframes up-down-1 {
   
   0% {
-    top: -20%;
+    transform: translateY(-30%);
   }
 
   100% {
-    top: -40% ;
+    transform: translateY(-10%);
+  }
+}
+@keyframes up-down-2 {
+  
+  0% {
+    btransform: translateY(-30%);
+  }
+
+  100% {
+    transform: translateY(-25%);
   }
 }
 .landing::after {
