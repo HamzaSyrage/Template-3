@@ -858,6 +858,11 @@ header .container .other ul li a:hover::after {
     margin: auto;
   }
 }
+@media (max-width:400px) {
+  .testimonials .container .content .box {
+    margin: 0;
+  }
+}
 
 .testimonials .box h3 {
   margin-bottom: 10px;
