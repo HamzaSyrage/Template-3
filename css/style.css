@@ -884,13 +884,14 @@ header .container .other ul li a:hover::after {
 }
 
 .testimonials .box .image {
-  position: absolute;
-  right: -10px;
-  top: -50px;
+  border: 10px solid var(--section-background);
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 10px solid var(--section-background);
+  overflow: hidden;
+  position: absolute;
+  top: -25%;
+  right: -2%;
 }
 
 .testimonials .box .image img {
