@@ -862,6 +862,9 @@ header .container .other ul li a:hover::after {
   .testimonials .container .content .box {
     margin: 0;
   }
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .testimonials .box h3 {
